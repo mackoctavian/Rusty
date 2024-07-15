@@ -1,8 +1,18 @@
+/// A savings account
 pub struct SavingsAccounts {
     balance: i32,
 }
 
 impl SavingsAccounts {
+    ///Creates a `SavingsAccount` with a specefied balance
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use bank::SavingsAccount;
+    /// let account = SavingsAccount::new(10);
+    /// assert_eq!(account.get_balance(), 10);
+    /// ```
     pub fn new(balance: i32) -> Self {
         Self { balance }
     }
